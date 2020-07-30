@@ -550,6 +550,12 @@ input[type="email"]:focus {
     .card {
         padding: 30px 20px;
     }
+
+    input[type="email"],
+    input[type="submit"] {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media all and (max-width: 1000px) {
@@ -679,12 +685,6 @@ input[type="email"]:focus {
     .menu__item_padding {
         padding: 0;
     }
-
-    input[type="email"],
-    input[type="submit"] {
-        width: 100%;
-        text-align: center;
-    }
 }
 
 @media all and (max-width: 700px) {
@@ -783,6 +783,10 @@ input[type="email"]:focus {
     
     .cart_space {
         width: 45%;
+    }
+
+    .menu__item_padding {
+        margin-bottom: 0;
     }
 }
 
