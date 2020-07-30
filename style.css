@@ -752,8 +752,23 @@ input[type="email"]:focus {
     .paginator {
         margin-top: 50px;
     }
-    .text {
+    .text,
+    .footer__text {
         padding-bottom: 50px;
+    }
+
+    .wrapper-brand,
+    .title_margin-padding {
+        padding: 50px 0;
+    }
+
+    .title__menu_size,
+    .logo__a_size {
+        padding-top: 50px;
+    }
+
+    .menu__footer {
+        margin-bottom: 50px;
     }
 }
 
