@@ -5,6 +5,10 @@
     list-style-type: none;
 }
 
+img {
+    height: auto;
+}
+
 main {
     width: 100%;
 }
@@ -160,12 +164,15 @@ main {
 }
 
 .title {
-    padding-top: 150px;
-    padding-bottom: 68px;
     color: #ffffff;
     font-family: "Bebas Neue";
     font-size: 82px;
     font-weight: 400;
+}
+
+.title_p-150 {
+    padding-top: 150px;
+    padding-bottom: 68px;
 }
 
 .btn {
@@ -336,9 +343,13 @@ button:active {
 }
 
 .paginator-prev {
+    width: 26px;
     justify-self: end;
 }
 
+.paginator-next {
+    width: 26px;
+}
 
 
 .brand {
@@ -535,12 +546,9 @@ input[type="email"]:focus {
     }
 }
 
-@media all and (max-width: 1050px) {
+@media all and (max-width: 1070px) {
     .card {
         padding: 30px 20px;
-    }
-    .card__img-top {
-        height: 300px;
     }
 }
 
@@ -558,16 +566,6 @@ input[type="email"]:focus {
     .phone__num {
         font-size: 16px;
     }
-    .card__img-top {
-        height: 300px;
-    }
-}
-
-@media all and (max-width: 900px) {
-    .card__img-top {
-        height: 300px;
-    }
-    
 }
 
 @media all and (max-width: 800px) {
@@ -599,8 +597,8 @@ input[type="email"]:focus {
         display: flex;
         align-items: center;
         position: absolute;
-        top: 20px;
-        left: 20px;
+        top: 25px;
+        left: 10px;
         width: 26px;
         height: 26px;
         cursor: pointer;
@@ -734,6 +732,29 @@ input[type="email"]:focus {
     .phone {
         width: 100%;
     }
+
+    .content-box,
+    .paginator-box {
+        width: 100%
+    }
+    .title_p-150 {
+        padding: 50px 0;
+        font-size: 60px;
+    }
+    .btn,
+    .slider-box{
+        margin-bottom: 50px;
+    }
+
+    .paginator-box {
+        text-align: center;
+    }
+    .paginator {
+        margin-top: 50px;
+    }
+    .text {
+        padding-bottom: 50px;
+    }
 }
 
 @media all and (max-width: 440px) {
@@ -744,4 +765,16 @@ input[type="email"]:focus {
     .card_display-n {
         display: none;
     }
+    
+    .cart_space {
+        width: 45%;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .menu__btn {
+        top: 30px;
+        width: 20px;
+        height: 20px;
+      }
 }
