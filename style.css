@@ -138,10 +138,6 @@ main {
     text-transform: uppercase;
 }
 
-.w_q {
-    align-items: center;
-}
-
 .phone__num::before {
     content: "";
     display: inline-block;
@@ -219,6 +215,7 @@ button:active {
    }
 
 .slider-box {
+    display: flex;
     margin-bottom: 90px;
     
 }
@@ -301,9 +298,6 @@ button:active {
 
 .card-deck {
     width: 90%;
-    /* display: grid;
-    grid-template-columns: 3% 94% 3%;
-    grid-gap: 2%; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -408,7 +402,7 @@ button:active {
     font-weight: 400;
 }
 
-.pagination-circle {
+.pagination-recall {
     display: flex;
     flex-direction: row-reverse;
     text-align: center;
@@ -482,7 +476,7 @@ button:active {
 }
 
 .menu__item_padding {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .form {
@@ -563,14 +557,16 @@ input[type="email"]:focus {
     .title__menu_size {
         font-size: 24px;
     }
-    .logo__text {
-        font-size: 12px;
-    }
-    .menu__item > a {
-        font-size: 14px;
-    }
     .phone__num {
         font-size: 16px;
+    }
+
+    .card__good {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .card_display {
+        display: none;
     }
 }
 
@@ -644,8 +640,6 @@ input[type="email"]:focus {
       
       .menu__item {
         padding: 12px 20px;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 20px;
         transition-duration: .25s;
       }
       .menu__item:hover {
@@ -706,17 +700,6 @@ input[type="email"]:focus {
 }
 
 @media all and (max-width: 630px) {
-    .card__good {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .card__good:first-child {
-        visibility: hidden;
-    }
-    .card_display {
-        display: none;
-    }
-
     .profile__deck {
         display: grid;
         grid-template-columns: 1fr;
@@ -724,6 +707,10 @@ input[type="email"]:focus {
 }
 
 @media all and (max-width: 576px) {
+    .cart_space {
+        width: 45%;
+    }
+
     .logo  {
         width: 100%;
         flex-wrap: wrap;
@@ -731,6 +718,9 @@ input[type="email"]:focus {
     .logo__a,
     .phone {
         width: 100%;
+    }
+    .navbar {
+        padding: 0;
     }
 
     .content-box,
@@ -773,6 +763,13 @@ input[type="email"]:focus {
 }
 
 @media all and (max-width: 440px) {
+    .cart {
+        width: 40%;
+    }
+    .cart_space {
+        width: 55%;
+    }
+
     .card__good {
         display: grid;
         grid-template-columns: 1fr;
@@ -785,8 +782,16 @@ input[type="email"]:focus {
         width: 45%;
     }
 
-    .menu__item_padding {
-        margin-bottom: 0;
+    .title__menu,
+    .footer__logo__a,
+    .logo-footer__text,
+    .menu__footer {
+        width: 25%;
+    }
+
+    .title__form_width,
+    .form {
+        width: 50%;
     }
 }
 
