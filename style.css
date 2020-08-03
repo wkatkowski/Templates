@@ -578,6 +578,12 @@ input[type="email"]:focus {
         width: 40%;
     }
 
+    .services {
+        background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)), url(images/brown-watch.jpg) top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     .title_p-150 {
         padding-top: 100px;
     }
@@ -830,6 +836,10 @@ input[type="email"]:focus {
 }
 
 @media all and (max-width: 400px) {
+    .menu__box {
+        width: 25%;
+    }
+
     .menu__btn {
         top: 30px;
         width: 20px;
